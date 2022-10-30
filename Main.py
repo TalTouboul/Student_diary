@@ -49,8 +49,8 @@ class Menu:
        self.__home_page_frm.configure(text=t)
        self.__home_page_frm.after(200, self.update_clock)
    def save_all_func(self):
-       self.Schedule.save_data_func()
-       self.Diary.save_data_func()
+       self.__Schedule.save_data_func()
+       self.__Diary.save_data_func()
    def change_lbl(self, btn):
         if btn == 'Save all':
             self.save_all_func()
